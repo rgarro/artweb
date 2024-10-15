@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - Ofrecemos todo tipo de métodos de datación: dendrocronologia, termoluminiscencia, datación por carbono, evaluación por desgaste, tipo de materiales y análisis de pigmentos.">
+    <meta name="keywords" content="datacion por carbono, ciencia y forense, cientifico y forense, investigacion forense, investigacion sobre obra de arte original, expertos en arte, estudios forenses sobre obra de arte, especialistas en obras de arte de artistas famosos, artistas reconocidos, obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigar edad de obra de arte">
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - La datación por radiocarbono es un método de ayuda en la autenticación.</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+     <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+          </div>
+      </div>
+      
+      <nav>
+        <!-- The overlay -->
+        <%- include('./partials/nav-bar.ejs') %>
+      
+      
+        </div>
+      
+      </div>
+      <div class="subseccion-header-1">
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div class="contenedor-hambu"> 
+        <div class="hamburguesa" onclick="openNav()">
+          <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+        </div>
+      </div>
+      <script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+      <div class="subseccion-menu">
+         <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a> ·</b><a href="<%= baseURL %>/cientifico-y-forense" title="Ciencia y estudios forenses de arte"> Científico y forense</a><b> ·</b> <a href="<%= baseURL %>/cientifico-y-forense/datacion" title="Edad de arte"> Datación </a>
+      </div>
+
+      <div>
+        <h1>Datación</h1>
+        <div class="decoration"></div>
+        
+      </div>
+    <p>
+        La cuestión de la edad del cuadro, la fecha de su creación, es importante en la autenticación del arte.
+
+Por supuesto, para que sea del artista concreto que se espera que lo haya pintado, debe datar de cuando estaba vivo y pintaba.
+
+Para el historiador de arte profesional, la edad del cuadro es visible por el tipo de materiales utilizados, por su desgaste, por su decoloración, por las grietas de la edad en la pintura e incluso por el patrón particular del craquelado.
+
+Es decir, que para el experto en autenticación profesional, la edad del cuadro se hace evidente y evidente por sí misma en cuanto pone los ojos en el cuadro y aún más en cuanto se le da la vuelta para ver cómo es su reverso.
+
+A menudo, las plantillas, los sellos, las marcas, las etiquetas, la escritura a mano, las pegatinas, proporcionarán inmediatamente información adicional sobre la edad al historiador experimentado que lo examine.
+
+Todo esto se suma a lo que representa el cuadro, así como al estilo en que está pintado, que proporcionan sus propios indicadores de edad.
+
+En definitiva, cuando el cuadro se pone delante de ojos experimentados, hay muchas cosas que comunican su antigüedad.
+
+Las cosas se complican si hay razones para sospechar que todo podría haber sido inventado, que cada signo de edad es una cortina de humo, que todo es un engaño para hacer creer que el cuadro es antiguo, cuando en realidad no lo es.
+
+En ese caso, los pigmentos pueden analizarse químicamente para determinar su naturaleza y cuándo fueron fabricados por primera vez.  Los materiales orgánicos pueden datarse con carbono.  La madera puede datarse a partir de sus anillos de crecimiento.  
+
+Al final, la datación de la pintura rara vez es un obstáculo para su autenticación.  Casi siempre es posible responder a la pregunta de cuándo se pintó.
+Ofrecemos todos los métodos y tecnologías de datación existentes.
+
+        
+    </p>
+
+    <div class="leermas">
+        <div><img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquieda"></div>
+        <ul>
+            <li><a href="<%= baseURL %>/cientifico-y-forense/datacion-por-carbono">Datación por carbono</a></li>
+            <li><a href="<%= baseURL %>/cientifico-y-forense/sobre-la-datacion">Sobre la datación dendrocronológica</a></li>
+            <li><a href="<%= baseURL %>/cientifico-y-forense/sobre-la-termoluminiscencia">Sobre la termoluminiscencia</a></li>
+            <li><a href="<%= baseURL %>/cientifico-y-forense/analisis-de-pigmentos">Análisis de pigmentos</a></li>
+            <li><a href="<%= baseURL %>/cientifico-y-forense/datacion-por-metales">Datación por metales</a></li>
+            <li><a href="<%= baseURL %>/cientifico-y-forense/analisis-del-papel">Análisis del papel</a></li>
+        </ul>
+    </div>
+
+    </div>
+  </div>
+</div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+
+</body>
+</html>

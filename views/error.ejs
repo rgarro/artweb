@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/secciones.css">
+ <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="/css/h5.css">
+    <title>Expertos en Arte · Error </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+          <div class="logo-header"><a href="/">Expertos en Arte</a>
+          </div>
+      </div>
+      
+      <nav>
+        <!-- The overlay -->
+        <%- include('./partials/nav-bar.ejs') %>
+      
+      
+    
+      <div class="subseccion-header-1">
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div class="contenedor-hambu"> 
+        <div class="hamburguesa" onclick="openNav()">
+          <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+        </div>
+      </div>
+      <script src="/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+   
+    <div>
+        <h1><%= message %></h1>
+        <div class="decoration"></div>
+        
+    </div>
+  <div>
+<h2><%= error.status %></h2>
+
+</div>    
+
+
+  <!-- FOOTER -->
+ 
+
+</body>
+</html>

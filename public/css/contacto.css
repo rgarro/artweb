@@ -1,0 +1,118 @@
+.background-contacto{
+background-image: url('../img/arte/una-romeria-cc.webp');
+/*background-color: #2b2c2c; */
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.container-c{
+max-width: 1050px;
+margin: auto;
+}
+
+.caja-form, .email, .mensaje{
+    margin: 15px 0px;
+}
+
+.container-c > div{
+    background-color: white;
+    padding: 25px;
+    color: #2b2c2c;
+   
+
+}
+
+
+input[type=text], textarea,
+input[type=text]:focus, textarea:focus{
+    width: 100%;
+    padding: 15px;
+border:0;
+background-color: #f0f0f0;
+outline: none;
+margin:5px 0px;
+font-family: 'Arial';
+}
+
+.caja-form div{
+padding: 5px 0px;
+}
+
+input[type=submit]{
+width:148px;
+    padding: 10px;
+    background-color: #527280;
+    border: 0;
+    color: white;
+
+}
+.boton-for{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+form{
+    font-family: Arial;
+}
+
+  
+@media screen and (min-width: 950px) {
+    .container-c{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container-c > div{
+        padding: 55px;
+     
+    }
+
+}
+
+
+
+.arrastre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    background-color: #f0f0f0 ;
+    height: 100px;
+}
+
+
+
+    
+.click {
+    /*background-color: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;*/
+
+    background-color: transparent !important;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;
+    color: initial;
+    font-size: 13px;
+    width: auto;
+    padding: 0;
+}
+
+#preview {
+    font-size: 12px;
+}
+
+.arrastre > h4{
+    font-size: 12px;
+    text-align: center;
+    font-family: Arial;
+    line-height:16pt;
+    font-weight: lighter;
+    display: inline;
+
+}

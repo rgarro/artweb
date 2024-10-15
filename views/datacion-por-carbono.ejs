@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - La datación por carbono es últil en autenticaciones pero sólo para un rango de mas-menos  20 años.">
+    <meta name="keywords" content="datacion por carbono, ciencia y forense, cientifico y forense, investigacion forense, investigacion sobre obra de arte original, expertos en arte, estudios forenses sobre obra de arte, especialistas en obras de arte de artistas famosos, artistas reconocidos, obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigar edad de obra de arte">
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - La datación por carbono brinda fechas aproximadas.</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+        <div class="sobre-nosotros">
+        
+        <div>
+     <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+          </div>
+        
+      
+      <nav>
+        <!-- The overlay -->
+        <%- include('./partials/nav-bar.ejs') %>
+      
+  
+      <div class="subseccion-header-1">
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div class="contenedor-hambu"> 
+        <div class="hamburguesa" onclick="openNav()">
+          <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+        </div>
+      </div>
+      <script src="<%= baseURL %>/javascripts/h5.js"></script>
+      </div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+        <div class="subseccion-menu">
+           <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a> ·</b><a href="<%= baseURL %>/cientifico-y-forense" title="Ciencia y estudios forenses de arte"> Científico y forense</a><b> ·</b> 
+           <a href="<%= baseURL %>/cientifico-y-forense/datacion" title="Edad de arte"> Datación </a><b> ·</b> 
+           <a href="<%= baseURL %>/cientifico-y-forense/datacion-por-carbono" title="Datación de arte por carbono"> Datación por carbono </a>
+        </div>
+
+        <div>
+        <h1>Datación por carbono</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+        La datación por radiocarbono es un método científico para datar materiales orgánicos. La madera, el hueso, el marfil, el cuerno, el cuero y los tejidos naturales pueden datarse con carbono.
+
+        El metal, la piedra y los materiales sintéticos no se pueden datar con carbono.
+        
+        En el ámbito de las artes plásticas, los materiales que más se datan con carbono son los paneles de madera y el lienzo o el lino.
+        
+        A diferencia de otros métodos de datación, la datación por carbono no proporciona una fecha específica o precisa. El resultado se expresa como una probabilidad de que el material date de una ventana temporal de varias décadas.
+        
+        Por ejemplo, un resultado típico podría ser que hay un 65% de probabilidades de que el material date de 1860 a 1920.
+        
+        Por esta razón, la datación por carbono es más útil para los objetos más antiguos, que pueden tener cientos de años, o a veces miles de años en el caso de las antigüedades.
+        
+        Lo que se necesita es una pequeña muestra de del material a datar.
+        
+        
+    </p>
+
+    </div>
+
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - Utilizamos métodos forenses para  confirmar la autenticidad  de todos los materiales usados en la creación de obras de arte.">
+    <meta name="keywords" content="analisis de pigmentos, ciencia y forense, expertos en arte, estudios forenses sobre obra de arte, obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigar edad de obra de arte">
+     <link rel="stylesheet"  href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet"  href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet"  href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte -Los estudios forenses confirman la autenticidad. </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+    <div class="logo-header"><a  href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica y todo el mundo">Expertos en Arte</a>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+      <a  href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica y todo el mundo"> Inicio</a><b> ·</b><a  href="<%= baseURL %>/cientifico-y-forense" title="Estudios cientificos y forenses en arte"> Científico y forense</a><b> ·</b> <a  href="<%= baseURL %>/cientifico-y-forense/estudios-forenses" title="Estudios forenses en arte"> Estudios forenses</a></div>
+
+    <div>
+        <h1>Estudios forenses</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+        Es habitual encontrar escritura o números en el reverso de los cuadros o en las etiquetas y etiquetas pegadas detrás de ellos. Los estudios forenses permiten datar la escritura y determinar de qué parte del mundo procede. 
+
+        También se puede datar el instrumento de escritura utilizado.
+        
+        Las direcciones y números de teléfono antiguos encontrados en las etiquetas pueden fecharse.
+        
+        Cuando el texto es más largo, el análisis lingüístico permite determinar si el escritor era un hablante nativo. 
+        
+        Se pueden identificar y fechar los diferentes tipos de tablas utilizadas por los pintores.
+        
+        Se puede datar la forma en que se cortan y unen los bastidores e identificar el país del que proceden.
+        
+        Las tachuelas utilizadas para estirar el lienzo pueden fecharse en función de su fabricación. 
+        
+        A veces, su diseño particular permite identificar el país de procedencia.
+        
+        El estudio de los elementos de la composición permite determinar, por ejemplo, el lugar en el que se pintó un paisaje en función de los árboles y las plantas que presenta.
+        
+        Las razas de animales de granja y de compañía pueden identificarse, fecharse y determinar su ubicación geográfica.
+        
+        Los aparejos de los barcos nos indican su ubicación u origen.
+        
+        Los estudios forenses proporcionan un sinfín de información que nos ayuda a determinar o confirmar la autenticidad. 
+        
+    </p>
+    <div class="leermas">
+      <div><img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquieda"></div>
+      <ul>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/firma" title="Firma de obra de arte">Firma</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/firma-y-caligrafia" title="Firma y caligrafía en una obra de arte">Firma y caligrafía</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/linguistica-forense" title="Investigación de arte a través de lingüistica forense">Lingüística forense</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/sellos-y-etiquetas" title="Sellos y etiquetas en arte">Sellos y etiquetas</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/sellos" title="Sellos en obras de arte">Sellos</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/tachuelas" title="Tachuelas en cuadros">Tachuelas</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/montaje-de-bastidores" title="Montaje de bastidores en cuadros">Montaje de bastidores</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/especies-de-madera" title="Especies de madera">Especies de madera</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/paneles" title="Paneles en cuadros">Paneles</a></li>
+          <li> <a href="<%= baseURL %>/cientifico-y-forense/tablas" title="Tablas en pintura">Tablas</a></li>
+      </ul>
+  </div>
+
+    </div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+
+</body>
+</html>

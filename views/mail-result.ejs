@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Algo anduvo mal. No pudimos enviar su mensaje.">
+    <meta name="keywords" content="investigacion, expertos en arte, autenticacion de obras de arte, autenticar, obra de arte de artista famoso, artista reconocido, obra de arte original, evaluacion de obras de arte, investigacion sobre obras de arte de artista famoso, validar autenticidad de obra de arte, certificacion coa, certificacion de obras de arte originales"> 
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en Arte · Investigación </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+      <div class="subseccion-menu">
+        <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a><b> ·</b> <a href="<%= baseURL %>/#contacto" title="Contacte a expertos en arte"> Contacto </a> <b> ·</b> 
+  
+      </div>
+
+      <% if (errores!=null){ %>
+        <div>
+          <h2><i class="fa-solid fa-xmark"></i> Su mensaje no pudo ser enviado</h2>
+          <p>Por favor, intente nuevamente, o escríbanos por correo electrónico a <a
+              href="mailto:info@expertosenarte.org">info@expertosenarte.org</a> </p>
+        </div>
+        <div style="display: flex; justify-content:center; align-items:center; margin-top: 50px;"><img
+            src="/public/img/arte/Perros_en_trailla-header2.jpg" alt="Perros en trailla pintura"
+            style="max-height: 400px; width: 100%; object-fit: cover;">
+        </div>
+      <% } else { %> 
+        <div> <h2> ¡Gracias! Su mensaje ha sido enviado.</h2> <p> Pronto nos pondremos en contacto con usted.</p></div>
+      <% } %> 
+
+        
+        
+
+    </div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+
+</body>
+</html>

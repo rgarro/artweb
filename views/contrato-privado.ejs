@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - Las ventas por contrato privado son confidenciales, reservadas y son el método preferido de muchos coleccionistas privados y museos.">
+    <meta name="keywords" content="contrato privado, expertos en arte, vender, vender obra de arte original, venta de obras de arte originales, arte, venta de arte, empresa que venden arte">
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - Si quiere vender una pintura valiosa, lo mejor es hacerlo con un contrato privado.</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+        <a href="<%= baseURL %>/vender" title="Vender obra de arte"> Vender</a><b> ·</b> <a href="<%= baseURL %>/vender/contrato-privado" title="Vender a través de contrato privado">Venta a través de un contrato privado</a></div>
+
+    <div>
+        <h1>Venta a través de un contrato privado</h1>
+        <div class="decoration"></div>     
+    </div>
+    <p>
+        Las ventas a través de tratados privados se realizan de forma confidencial entre un comprador y un vendedor. A veces esto crea condiciones financieras muy favorables para el vendedor. <br>
+
+        La dificultad radica en encontrar un comprador sin poner a la venta públicamente la obra de arte. <br>
+        
+        Para nosotros es más fácil porque trabajamos a diario con coleccionistas privados, inversores y especuladores. <br>
+        
+        Por eso, si una venta por tratado privado tiene sentido para usted, le ofrecemos nuestros servicios de venta por intermediario. <br>
+        
+        Operamos en todo el mundo, tenemos asociados en 25 países y hablamos 22 idiomas.  <br>
+        
+        No hace falta decir que todas las consultas son confidenciales. <br>
+        
+</p>
+   
+</div>
+
+   
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

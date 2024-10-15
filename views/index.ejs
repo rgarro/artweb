@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Expertos en arte - autentifica, certifica, valora, analiza científicamente y asiste en la venta de pinturas y dibujos.">
+  <meta name="keywords"
+    content="peritos de arte, evaluacion de obras de arte, investigadores de arte, obras de arte de artistas famosos, atestación de obras de arte, obras de arte latinoamericano, venta a museos de obras de arte, certificacion de obras de arte, autenticacion, valoracion">
+  <meta name="author" content="Expertos en Arte">
+ <title>Expertos en arte - Autenticación, certificación (COA) y tasación del valor.</title>
+  <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+   <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+  <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+   <meta name="google-site-verification" content="CZB1aZrAYfvtIKaSRc9laHWWxiiswrkOEk355fui7LY" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+
+<body>
+  <header class="index">
+    <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    <nav>
+      <!-- The overlay -->
+      <%- include('./partials/nav-bar.ejs') %>
+
+
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div class="contenedor-hambu">
+        <div class="hamburguesa" onclick="openNav()"> <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px"></div>
+      </div>
+      <script src="<%= baseURL %>/javascripts/h5.js"></script>
+    </nav>
+
+    <div class="titulo">
+      <h1>¿Tiene una obra de arte <br>
+        de un artista famoso?</h1>
+      <p>¿Cuánto vale?</p>
+    </div>
+  </header>
+  <main>
+    <!-- SECCIÓN DE NÚMEROS -->
+    <section class="cifras">
+      <div class="container-mw">
+        <div class="cifras-titulo">
+          <h2>Expertos en Arte en cifras</h2>
+        </div>
+        <div class="decoration"></div>
+
+        <div class="tabla">
+          <div>
+            <div class="value">40.800 + </div>
+            <div class="item">obras evaluadas</div>
+          </div>
+          <div>
+            <div class="value">70.000 + </div>
+            <div class="item">autenticaciones</div>
+          </div>
+          <div>
+            <div class="value">10.000 + </div>
+            <div class="item">clientes satisfechos</div>
+          </div>
+          <div>
+            <div class="value">20 <i>años</i></div>
+            <div class="item">de experiencia</div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Novedades -->
+    <div class="background">
+      <section>
+        <div class="container-mw">
+          <div>
+            <h2>Últimas novedades</h2>
+            <div class="decoration"></div>
+          </div>
+
+          <div class="container">
+            <div class="news-img"><img src="<%= baseURL %>/img/arte/perro-aullando-a-la-luna-cc.webp"
+                alt="Cuadro de Rufino"></div>
+            <div>
+              <div class="news-title">
+                <h3>Un cuadro de Rufino Tamayo fue valuado en $7.000.000</h3>
+              </div>
+              <div>
+                 <p>Una pintura de <b>Rufino Tamayo</b> de 1942, Perro aullando a la luna, estimada en hasta 7 mdd,
+                  podría batir el récord para el artista en subastas en Nueva York, y quizás para el <b>arte
+                    latinoamericano</b> en subastas en general. </p><br>
+                <div class="masInfo"> <a href="<%= baseURL %>#" title="Más noticias">Más información <img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px"
+                      alt="flecha a la izquierda"></a></div>
+              </div>
+            </div>
+          </div>
+
+  
+    </section>
+    </div>
+
+    <!-- NUESTROS SERVICIOS -->
+    <section>
+      <div class="container-mw">
+
+        <div class="servicios-titulo" id="nuestros-servicios">
+          <div>
+            <h2>Nuestros servicios</h2>
+          </div>
+          <div class="decoration"></div>
+        </div>
+
+        <div class="container-servicios">
+          <article>
+            <img src="<%= baseURL %>/img/arte/antonio-segui-cc.webp" alt="Pintura de antonio segui">
+            <a class="title-s" href="<%= baseURL %>/vender" title="Vender arte"><p><b>Venta de obras de arte</b></p></a>
+            <p>Sabemos ofrecer y lograr los precios de venta más altos para nuestros clientes.</p>
+            <div class="masInfo"><a class="negro" href="<%= baseURL %>/vender" title="Venta de obras de arte">Vender <img
+                  src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquierda"></a></div>
+          </article>
+          <article>
+            <img src="<%= baseURL %>/img/arte/joaquin-torres-garcia-cc.webp" alt="Expedición de certificados">
+            <a class="title-s" href="<%= baseURL %>/autenticacion" title="Autenticación de obras de arte"><p><b>Autenticación</b></p></a>
+            <p>Certificamos obras de arte para clientes de todo el mundo.</p>
+            <div class="masInfo">
+              <a class="negro" href="<%= baseURL %>/autenticacion" title="Autenticación de obras de arte">Autenticar 
+                <img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquierda"></a></div>
+          </article>
+          <article>
+            <img src="<%= baseURL %>/img/arte/xul-solar-cc.webp" alt="Arte ciencia">
+            <a class="title-s" href="<%= baseURL %>/cientifico-y-forense"><p><b>Científico y forense</b></p></a>
+            <p>Conocemos y ofrecemos todas las técnicas forenses, desde inteligencia artificial hasta algoritmos para
+              certificar sus obras de arte.
+            </p>
+            <div class="masInfo"><a class="negro" href="<%= baseURL %>/cientifico-y-forense" title="Ciencia y estudios forenses">Investigar <img
+                  src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquierda"></a></div>
+          </article>
+          <article>
+            <img src="<%= baseURL %>/img/arte/jose-gurvich-cc.webp" alt="Valoraciónd de obras de arte">
+            <a class="title-s" href="<%= baseURL %>/tasacion-del-valor"><p><b>Tasación del valor</b></p></a>
+            <p>Brindamos las tasaciones más sensatas y beneficiosas.</p>
+            <div class="masInfo"><a class="negro" href="<%= baseURL %>/tasacion-del-valor" title="Peritaje de arte">Tasar <img
+                  src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquierda"></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+
+    <!-- <div class="background-contacto">
+      <section>
+        <div class="container-mw" id="contacto">
+    
+          <div class="container-c">
+            <div>
+              <h3>Contáctenos</h3>
+              <form action="contacto" id="formulario" enctype="multipart/form-data" method="POST">
+                <p>Envíenos sus fotografías y le responderemos a la brevedad.<br>
+                  Deben ser de alta resolución.</a>
+                </p>
+    
+                <script src="<%= baseURL %>/javascripts/formularioContacto.js"></script>
+    
+                <div class="caja-form">
+                  <div class="drop">
+                    <div class="dragArea">
+                      <div class="arrastre">
+    
+                        <h4> Para cargar varias imagenes <br> arrastre y suelte las imagenes en la caja o haga
+                          <button class="click">'click aquí'</button>
+                        </h4>
+    
+                        <input type="file" name="imagenes" multiple id="input-file" hidden />
+                      </div>
+                    </div>
+                    <div id="preview">
+    
+                    </div>
+                  </div>
+                  <div class="nombre">
+                    <label for="nombre"><b> Nombre y apellido</b> <br></label>
+                    <input type="text" name="name" id="nombre" placeholder="Nombre">
+                  </div>
+                  <div class="email">
+                    <label for="mail"> <b> E-mail </b> <br> </label>
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                  </div>
+                  <div>
+                    <label for="mensaje"><b> Mensaje </b> </label>
+                    <textarea name="text" id="mensaje" cols="30" rows="10" placeholder="Su mensaje"></textarea>
+                  </div>
+                </div>
+    
+                <div class="boton-for">
+                  <input class="button-form" type="submit" value="ENVIAR">
+                </div>
+              </form>
+    
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> -->
+
+  </main>
+  </div>
+  <!-- FOOTER -->
+
+  <%- include('./partials/footer.ejs') %>
+
+
+
+
+
+</body>
+
+</html>

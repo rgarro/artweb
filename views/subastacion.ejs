@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" 
+    content="Expertos en arte -  Para tener éxito en una subasta se necesita algo más de lo que el subastador puede hacer por usted.  Cuándo, dónde, quién, qué precio, presentación, son temas de suma importancia.">
+    <meta name="keywords" content="subasta, subastacion, subastacion de arte, expertos en arte, vender, venta por subasta, subastar arte, vender obra de arte original a museo, venta de obras de arte originales, arte, venta de arte, empresas que venden arte en subastas">
+ 
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - Si desea vender en una subasta, haga los deberes.</title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+        <a href="<%= baseURL %>/vender" title="Vender obra de arte"> Vender</a><b> ·</b> <a href="<%= baseURL %>/vender/subastacion" title="Subastamos su obra de arte">Subastación</a></div>
+
+    <div>
+        <h1>Subastación</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+        Los subastadores son los operadores más dinámicos, más productivos y más rápidos en la venta de arte. Esto no significa que pueda consignar sus obras de arte al azar y esperar resultados estelares. Como todo en la vida, los buenos resultados requieren una reflexión aguda, cálculos, planificación y, sobre todo, una buena ejecución. <br>
+
+        Para poner a su favor la fuerza inherente de las casas de subastas, debe seleccionar el lugar adecuado, la temporada correcta y la mejor casa de subastas para lo que va a vender. Por último, debe organizarse para que su obra de arte tenga la mejor venta y no todas las ventas son iguales.  Hay más cosas que debe intentar controlar si quiere maximizar las probabilidades de que le vaya bien. <br>
+        
+        La suerte existe y, por supuesto, puede tenerla y que le vaya extraordinariamente bien. Sin embargo, por regla general, la vida no es tan bondadosa, y la mayoría de las veces los grandes resultados provienen de tácticas inteligentes. <br>
+        
+        Aquí es donde entramos nosotros. Los subastadores son nuestros clientes.  Acuden a nosotros en busca de autenticaciones. Los conocemos. Podemos poner este conocimiento a su servicio y ayudarle de forma única a vender en subasta y hacerlo mucho mejor que el vendedor medio que no sabe lo que está haciendo. <br>
+        
+        Trabajamos con subastadores de todo el mundo y podemos ayudarle a vender independientemente de lo que tenga o de dónde se encuentre.
+        
+        
+</p>
+   
+</div>
+
+    </div></div></div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

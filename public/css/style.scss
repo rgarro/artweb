@@ -1,0 +1,464 @@
+@use 'secciones';
+
+//colores
+$color-negro:#2b2c2c;
+$otro-negro:#605E5E;
+$color-blanco:#FFF;
+$color-primario:#6E98AA;
+$color-gris: #ccc;
+//fonts
+$titulo-serif: 'Clearface', sans-serif;
+$subtitulo: 'Poppins', sans-serif;
+$texto-normal:'Arial', sans-serif;
+
+@font-face {
+    font-family: 'Clearface';
+    src: url('/fonts/ITC-Clearface-Std-Heavy.otf');
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/Poppins-Regular.ttf');
+	font-display: swap;
+    }
+
+//tamaño de fonts
+$size-h1: 64px;
+$size-h2: 51px;
+$size-numeros: 72px;
+$size-h3: 38px;
+$size-h4: 28px;
+$size-textonormal: 16px;
+$p-header: 38px;
+
+//tamaños
+$max-width: 1050px;
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//ESTILOS GENERALES
+h2{
+    font-family: $titulo-serif;
+    font-size: $size-h2;
+}
+
+h3{
+    font-family: $titulo-serif;
+    font-size: $size-h3;
+    }
+
+h4{
+    font-family: $titulo-serif;
+    font-size: $size-h4;
+}
+
+p{
+    font-family: $texto-normal;
+
+}
+
+//LINKS
+a{
+text-decoration: none;
+}
+
+//Header
+
+
+.index {
+    height: 700px;
+    background-image: url("/img/arte/Maja_vestida_Prado.webp");
+    background-size:cover;
+    color: $color-blanco;  
+
+    .titulo{
+    margin:auto;        
+    max-width: $max-width;
+    padding: 100px 5px 100px 5px;
+    p{
+        margin-top: 15px;
+    font-family: $subtitulo;   
+    font-size: $p-header;  
+    }
+}
+    h1{
+        font-family: $titulo-serif;
+        font-size: $size-h1;
+
+    }
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    font-family: $titulo-serif;
+    font-weight: 900;
+    padding: 12px;
+
+  a{
+      color: $color-primario;
+    font-size: 32pt;
+    font-style: $texto-normal;
+  }
+}
+
+
+
+//SECTIONS
+
+
+.container-mw{
+    margin:auto;        
+        max-width: $max-width;
+        padding: 60px 5px 60px 0px;
+}
+
+
+@media screen and (max-width: 951px){
+    .container-mw{
+        padding: 10px 10px;
+        p{
+            text-align: start;
+        }
+    }
+}
+
+//CIFRAS  
+    .cifras{
+        small{
+            padding: 0px 0px 30px;
+        }
+    }
+
+    .cifras-titulo, .servicios-titulo{
+        color:$color-negro;
+    }
+
+
+
+    .decoration{
+        width: 70px;
+        height: 7px;
+        background-color: $color-primario;
+        margin-bottom: 35px;
+        }
+    
+//TABLA CIFRAS
+
+    .tabla{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+margin: auto;
+margin-bottom: 50px;
+        max-width: 693px;
+    }
+
+ 
+    .value{
+        font-family: $titulo-serif;
+        font-size: $size-numeros;
+        color: $color-primario;
+        border-bottom: 1px solid $otro-negro;
+        }
+      
+    .item{
+        font-family: $texto-normal;
+        font-weight: bold;
+        color: $otro-negro;
+        font-size: $size-textonormal;
+        margin: 16px 0px 0px;
+        }
+  
+
+        //MEDIA QUERIES -puntos de corte
+        @media screen and (max-width: 951px){
+            #menu{
+                display:none;
+            }
+            header{
+                color: $otro-negro;          
+            }
+
+            .titulo h1{
+                font-size: 48px;
+              }  
+
+            h2{
+            font-size: 34px;
+            }
+            h3{
+            font-size: 25px;   
+            }
+            p{
+            font-size:16px;
+            line-height: 20px;
+            }
+ 
+            .value{
+            font-size: 35px;
+            }    
+            a{
+            font-size: 14px;
+            }
+
+        }       
+
+  /* On screens that are 690px wide or less */
+
+  
+@media screen and (min-width: 950px) {
+    /*NOTICIAS*/   
+        
+
+
+        .container > div:nth-child(1){
+            order: 4;
+            margin: auto;
+          }
+    
+        .container > div:nth-child(2){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 25px;
+        }
+
+        p{
+            line-height: 25px;
+        }
+        
+    /*NUESTROS SERVICIOS responsive*/
+   
+
+     }
+
+     
+     /*NOTICIAS*/
+     .background{
+        background-color: #2b2c2c;
+        color: white;
+    }
+    
+    .container{
+        max-width: $max-width;
+        display: flex;
+        flex-direction: column;
+   
+    }
+
+    .container div:nth-child(1){
+        margin: auto;
+    }
+    
+    
+
+    //mas información (BOTÓN)
+    .masInfo{
+        .negro{
+            color:$color-negro;
+        }
+        a{
+            font-family: $texto-normal;
+            font-size: $size-textonormal;
+            color: $color-blanco;
+            padding: 5px 0px;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            color: $color-blanco;
+            img{
+                width: 14px;
+            }
+        }
+        a:hover, a:focus {
+            background-size: 100% 2px;
+        }
+    }
+
+//NUESTROS SERVICIOS
+
+.container-servicios{
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.container-servicios img, .news-img img{
+width:100%;
+max-width: 689px;
+
+}
+
+
+.container-servicios  article{
+        margin: 10px 0px;
+            img{
+            max-height: 250px;
+            max-width:590px;
+            object-fit: cover;
+             }
+
+            h4{
+            margin: 5px 0px;
+            color: $color-negro;
+             }
+            div {
+            margin-top: 5px;
+            a{
+                padding: 5px 0px;
+            }
+        }
+    }
+
+.title-s{
+    color:#2b2c2c;
+    font-size: 18px;
+}
+
+.title-s:hover{
+color: #527280
+}
+
+    @media screen and (min-width: 690px) {
+        .container-servicios{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 0px;
+        } 
+    }
+ //FOOTER
+
+
+ .logo-footer{
+    font-family: $titulo-serif;
+    font-size:30px;
+    padding: 20px 10px 10px;
+ }
+
+ 
+ .contenido > div{
+    padding: 10px;
+ }
+
+footer{
+
+a, span{
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+    font-size: $size-textonormal;
+    font-weight: bold;
+ }
+
+.col-fo > a:hover{
+color: $color-primario;
+}
+
+ hr{
+    margin: 5px 0px 0px;
+ }
+
+ li a{
+    font-family: $texto-normal;
+    font-size: $size-textonormal;
+    font-weight: 100;
+ }
+
+ li a:hover{
+    color: $color-primario;
+ }
+
+ li{
+    font-family:$texto-normal;
+    margin: 15px 0px;
+
+ }
+
+ ul{
+    list-style: none;
+ }
+
+ .icons{
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media screen and (max-width: 800px){
+.icons{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+        padding: 20px;
+        img
+        {
+            width: 48px;
+            height: 48px;
+              }
+    
+        }
+    }
+}
+
+@media screen and (min-width: 801px){
+    .icons{
+        a{
+            justify-content: space-between;
+            padding: 0px 20px 0px 0px;
+            flex-wrap: wrap;
+            img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+
+ @media screen and (min-width: 801px){
+.footer{
+    max-width: $max-width;
+    margin: auto;
+}
+
+.contenido{
+    display:flex;
+    justify-content: space-around;
+}
+
+.contenido div{
+    flex: 1;
+    margin:0px 5px;
+    }
+}
+
+
+ //artistas
+ .logo-responsive{
+    color: $color-blanco;
+    font-size: 34px;
+    font-family: $titulo-serif;
+   }
+
+   @media screen and (min-width: 951px){
+.logo-responsive{
+    display: none;}
+}}

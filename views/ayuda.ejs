@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte -   Vender arte es difícil.  Ayudamos a redactar una buena descripción de la obra,   las condiciones de venta,  cómo  recibir el pago, cómo empacar, cómo embalar, cómo asegurar la obra. ">
+    <meta name="keywords" content="ayuda para vender arte, ayuda, expertos en arte, vender, arte, vender obra de arte original, venta de obras de arte originales, venta de arte, empresa que ayuda a vender arte">
+      
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - Si desea vender su pintura nosotros podemos ayudarle. </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+<main>
+  
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+        <a href="<%= baseURL %>/vender" title="Vender obra de arte"> Vender</a><b> ·</b> <a href="<%= baseURL  %>/vender/ayuda" title="Ayuda para la venta de arte">Ayuda para la venta de arte</a></div>
+
+    <div>
+        <h1>Ayuda</h1>
+        <div class="decoration"></div>  
+    </div>
+    <div class="lo-que">
+      <h2>Nivel 1</h2>
+      <p> <em>Consejos básicos</em></p>
+      <ul>
+        <li><span>Durante qué mes le conviene vender.</span></li>
+        <li><span>En qué país o ciudad.</span></li>
+        <li><span>Método de venta general que recomendamos.</span></li>
+        <li><span>Costo: $10.</span></li>
+        <li><span>Plazo de entrega: unos días.</span></li>
+        <li><span>Entrega: Por correo electrónico.</span></li>
+       </ul>          
+     <p>La obra de arte se queda con usted.</p>
+    </div>
+    <div class="lo-que">
+      <h2>Nivel 2</h2>
+      <p><em>Asesoramiento avanzado</em></p>
+      <ul>
+        <li><span>Durante qué mes le conviene vender</span></li>
+        <li><span>En qué país o ciudad</span></li>
+        <li><span>Método de venta general que recomendamos</span></li>
+        <li><span>A qué precio ofrecer en venta en relación con el tasado</span></li>
+        <li><span>Valor de la obra</span></li>
+        <li><span>Consejos de embalaje</span></li>
+        <li><span>Asesoramiento en seguros</span></li>
+        <li><span>Consejos para el envío</span></li>
+        <li><span>Aviso de pago</span></li>
+        <li><span>Asesoramiento fotográfico</span></li>
+        <li><span>Consejos de devolución/devolución del dinero</span> </li>
+        <li><span>Costo: $50 + tarifa de tasación, si desea que determinemos el precio de venta.</span></li>
+        <li><span>Tiempo de entrega: Una semana</span></li>
+        <li><span>Entrega: por correo electrónico.</span> </li>
+      </ul>
+      <p>La obra de arte se queda con usted.</p>
+    </div>
+    <div class="lo-que">
+      <h2>Nivel 3</h2>
+      <p><em>Ayuda básica</em></p>
+      <ul>
+        <li><span>Durante qué mes le conviene vender</span></li>
+        <li><span>En qué país o ciudad</span></li>
+        <li><span>Método de venta general que recomendamos</span></li>
+        <li><span>A qué precio ofrecer en venta en relación con el valor de tasación</span></li>
+        <li><span>Consejos de embalaje</span></li>
+        <li><span>Asesoramiento de seguros</span></li>
+        <li><span>Consejos para el envío </span></li>
+        <li><span>Aviso de pago</span></li>
+        <li><span>Asesoramiento fotográfico</span></li>
+        <li><span>Consejos de retorno/devolución de dinero</span></li>
+        <li><span>Escribimos una descripción para usted si es necesario.</span></li>
+        <li><span>Escribimos un informe de estado para usted si es necesario.</span></li>
+        <li><span>Proveemos el nombre del servicio de venta específico que recomendamos.</span></li>
+        <li><span> Costo: $100 + tarifa de tasación, en caso de que desee que determinemos el precio de venta.</span></li>
+        <li><span>Tiempo de entrega: Una semana.</span></li>
+        <li><span> Entrega: por correo electrónico.</span></li>
+      </ul>
+      <p>La obra de arte se queda con usted.</p>
+    </div>
+    <div class="ayuda">
+      <div class="lo-que">
+        <h2>Nivel 4</h2>
+        <p><em>Venta de corretaje</em></p>
+        <ul>
+          <li><span> Nos encargamos de vender su obra de arte.</span></li>
+          <li><span> Los costos son gratis para usted.</span></li>
+          <li><span> El comprador nos pagará.</span></li>
+        </ul>
+      <p>La obra de arte es enviada y consignada a nosotros.</p>
+      </div>
+    </div>
+</div>
+</main>
+ 
+  <!-- FOOTER -->
+<%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

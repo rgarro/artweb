@@ -1,0 +1,465 @@
+//colores
+$color-negro: #2b2c2c;
+$otro-negro: #605E5E;
+$color-blanco: #FFF;
+$color-primario: #6E98AA;
+$color-gris: #ccc;
+//fonts
+$titulo-serif: 'Clearface', sans-serif;
+$subtitulo: 'Poppins', sans-serif;
+$texto-normal: 'Arial', sans-serif;
+
+@font-face {
+    font-family: 'Clearface';
+    src: url('/fonts/ITC-Clearface-Std-Heavy.otf');
+	font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/Poppins-Regular.ttf');
+	font-display: swap;
+}
+
+//tamaño de fonts
+$size-h1: 64px;
+$size-h2: 51px;
+$size-numeros: 72px;
+$size-h3: 38px;
+$size-h4: 28px;
+$size-textonormal: 16px;
+$p-header: 38px;
+
+//tamaños
+$max-width: 1050px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//ESTILOS GENERALES
+h2 {
+    font-family: $titulo-serif;
+    font-size: $size-h2;
+
+}
+
+h3 {
+    font-family: $titulo-serif;
+    font-size: $size-h3;
+}
+
+h4 {
+    font-family: $titulo-serif;
+    font-size: $size-h4;
+}
+
+p {
+    font-family: $texto-normal;
+
+}
+
+//LINKS
+a {
+    text-decoration: none;
+}
+
+
+/// 
+/// HEADER de las secciones
+/// 
+
+
+//logo del header
+.logo-header {
+    font-family: $titulo-serif;
+    font-weight: 900;
+    padding: 12px;
+
+    a {
+        color: $color-primario;
+        font-size: 32pt;
+        font-style: $texto-normal;
+    }
+}
+
+//barra del header con logo
+.sobre-nosotros>div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+//configuración del header
+.header-seccion {
+    padding-top: 30px;
+    height: 354px;
+    background-image: url('../img/arte/Jose_de_arellano.webp');
+    background-size: cover;
+}
+
+//contenedor del header con background
+.seccion-container {
+    max-width: $max-width;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+//espacio entre los h1 y el menu
+.subseccion-header {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    color: $color-blanco;
+}
+
+.servicios-titulo {
+    h1 {
+        font-family: $titulo-serif;
+        font-size: $size-h2;
+    }
+
+    p {
+        font-family: $subtitulo;
+        font-size: $size-h4;
+    }
+}
+
+
+//puntos de cort del header
+@media screen and (max-width: 951px) {
+    #menu-2 {
+        display: none;
+    }
+
+    .logo-header {
+        display: none;
+
+    }
+}
+
+//contenedor del quienes somos
+.container-quienes {
+    padding: 40px;
+}
+
+.container-quienes div:nth-child(1) {
+    margin: auto;
+}
+
+.cuerpo>img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.cuerpo {
+    p {
+        text-align: justify;
+    }
+
+    ul {
+        font-family: $texto-normal;
+        line-height: 24px;
+        list-style: none;
+    }
+
+    span {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 951px) {
+
+    //subseccion artistas responsive
+
+
+    .container-quienes {
+        padding: 0;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .cuerpo {
+        padding: 0px 10px;
+    }
+
+}
+
+.background-blue {
+    background-color: $color-primario;
+    color: white;
+}
+
+.resaltado {
+    h3 {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
+
+//BOTON NAVBAR
+
+.menu-boton {
+    padding: 10px 0px;
+}
+
+//SUBSECCIONES
+
+.subseccion-header-1 {
+		height:354px;
+    height: 100px;
+    background-image: url(../img/arte/Jose_de_arellano.webp);
+    padding: 10px;
+		padding-top:30px;
+}
+
+.index-container {
+    height: 100%;
+    padding: 20px;
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-mw-subseccion {
+    max-width: $max-width;
+    margin: auto;
+    padding: 20px 0px 50px 0px;
+
+    p {
+        text-align: justify;
+    }
+
+    h1 {
+        font-family: $titulo-serif;
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin: 10px 0px 0px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .container-mw-subseccion {
+        padding: 10px 10px 30px 10px;
+
+        p {
+            text-align: start;
+        }
+    }
+}
+
+
+.subseccion-menu {
+    margin: 20px 0px;
+    font-family: $texto-normal;
+    color: $color-negro;
+
+    a {
+        color: $color-negro;
+    }
+
+    a:hover{
+        color: $color-primario;
+    }
+
+
+}
+
+//VENTA
+.venta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.venta-grid article {
+    flex: 50%;
+    padding: 5px;
+
+    h4 {
+        font-family: $texto-normal;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+//leer más
+
+.leermas {
+    margin: 30px 0px 0px;
+}
+
+.leermas div:nth-child(1) {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 15px;
+        height: 16px;
+    }
+}
+
+.leermas ul {
+    font-family: $texto-normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: inside;
+    color: $otro-negro;
+    margin-left: 10px;
+}
+
+.leermas ul li {
+    flex: 100%;
+    padding: 0px 10px;
+    min-width: 150px;
+}
+
+.leermas ul li ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.leermas ul li a {
+    color: $otro-negro;
+}
+
+.leermas ul li a:hover {
+    color: $color-primario;
+}
+
+
+//lista de links
+.lo-que {
+    padding: 0px 0px 15px;
+
+    h2 {
+        margin: 0;
+    }
+
+    ul {
+        list-style: inside;
+        font-family: $texto-normal;
+        color: $color-primario;
+
+        li {
+            margin: 8px;
+        }
+
+        li span {
+            color: $color-negro;
+        }
+    }
+}
+
+//investigacion p
+.investigacion {
+    margin: 10px 0px 15px;
+}
+
+
+
+.ul-vender {
+    ul {
+        list-style: inside;
+        font-family: $texto-normal;
+        color: $color-primario;
+
+        li {
+            margin: 8px;
+        }
+
+        li span {
+            color: $color-negro;
+        }
+    }
+}
+
+
+//payment form
+.container-mw-subseccion {
+
+    .contform-pago {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    #paymentFrm {
+        margin: auto;
+        //  border: #f0f0f0 solid 1px;
+        padding: 5px 0px 15px;
+
+        //  box-shadow: 1px 1px 1px $color-gris;
+       
+
+        input[type=number],
+        input[type=email],
+        input[type=text] {
+            width: 100%;
+            background-color: #f1f1f1;
+            padding: 16px;
+            margin: 0px 0px 10px 0px;
+            border: 0;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Arial';
+            color: #605E5E;
+        }
+
+
+
+        input[type=number]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+
+        span {
+            font-weight: 100;
+            text-align: center;
+            padding: 10px 0px 5px;
+            line-height: 25px;
+            font-size: 16px;
+            font-family: "Arial";
+        }
+
+        .ejemplo {
+            font-size: 13px;
+            padding: 0px 0px 10px;
+            color: $otro-negro;
+        }
+    }
+
+    h2 {
+        padding: 10px 0px;
+    }
+}

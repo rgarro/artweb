@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - Investigamos, identificamos y datamos sellos de cera de  coleccionistas, que aparecen en el revés de las pinturas y dibujos.">
+    <meta name="keywords" content="sellos de cera, sellos de caucho, arte, investigacion sobre obra de arte original, expertos en arte, estudios forenses sobre obra de arte, especialistas en obras de arte de artistas famosos, artistas reconocidos, obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigar edad de obra de arte">
+   
+    <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+       <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+       <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">  
+       <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - Identificamos sellos de  cera en el revés de las pinturas. </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+     <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+          </div>
+      </div>
+      
+      <nav>
+        <!-- The overlay -->
+        <%- include('./partials/nav-bar.ejs') %>
+      
+
+      <div class="subseccion-header-1">
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div class="contenedor-hambu"> 
+        <div class="hamburguesa" onclick="openNav()">
+          <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+        </div>
+      </div>
+      <script src="../javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+       <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a> ·</b><a href="<%= baseURL %>/cientifico-y-forense" title="Ciencia y estudios forenses de arte"> Científico y forense</a><b> ·</b>
+       <a href="<%= baseURL %>/cientifico-y-forense/estudios-forenses" title="Estudios forenses aplicados a obras de arte"> Estudios forenses</a><b> ·</b>
+       <a href="<%= baseURL %>/cientifico-y-forense/sellos" title="Sellos en arte">Sellos</a></div>
+
+    <div>
+        <h1>Sellos</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+        Hasta 1914 era habitual que los propietarios de grandes colecciones de arte colocaran un sello de cera con su escudo en el reverso de los cuadros.
+
+        Además de los coleccionistas individuales, también lo hacían las instituciones.  Por ejemplo, trabajamos en un cuadro de 1700 que tenía un sello de cera de un monasterio.
+        
+        En cuanto a los sellos de caucho, se hicieron comunes después de que disminuyera el uso de los sellos de cera.  Es sobre todo en el siglo XX cuando se utilizan los sellos de caucho.
+        
+        Entre los usuarios más comunes están:
+        </p>
+
+        <div class="lo-que">
+        <ul>
+            <li><span>Patrimonios de artistas</span></li>
+            <li><span>Subastadores</span></li>
+            <li><span>Administración aduanera</span></li>
+            <li><span>Administración de impuestos</span></li>
+            <li><span>Departamento de Justicia</span></li>
+            <li><span>Ministerio de Cultura</span></li>
+            <li><span>Algunas galerías de marcos</span></li>
+            <li><span>Algunas galerías de arte</span></li>
+    </ul></div>
+<p>
+        Hoy en día, el uso de sellos de cera ha desaparecido casi por completo y el uso de sellos de caucho se ha vuelto poco común.
+        
+        Investigamos, fechamos e identificamos todos los sellos que son legibles.
+        
+        
+
+
+    </p>
+
+    </div></div></div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

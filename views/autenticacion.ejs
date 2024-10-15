@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - Autentifica, certifica y emite certificados de autenticidad de pinturas y otras obras de arte.">
+    <meta name="keywords" content="autenticacion de obras de arte, como autenticar una obra de arte de artista famoso, artista famoso, obra de arte de artista famoso, evaluacion de obras de arte, investigacion sobre obras de arte de artista famoso, autenticar obras de arte, validar autenticidad de obra de arte, certificacion coa, arte latinoamericano, certificacion de obras de arte originales">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+   
+    <title>Expertos en arte - Autenticamos todas las pinturas de artistas de habla hispana y de otras lenguas</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+  <div class="sobre-nosotros">
+        
+    <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+      </div>
+      </div>
+       
+      <nav>
+          
+      <!-- The overlay -->
+      <%- include('./partials/nav-bar.ejs') %>
+      
+      
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+       <div class="header-seccion">
+      
+        <div class="contenedor-hambu">
+          
+        <div class="hamburguesa" onclick="openNav()">
+          <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+          </div>
+      
+        <div class="servicios-titulo">
+        <header class="subseccion-header"><h1>Autenticación</h1>
+          <p></p>
+        </header>
+      </div>
+        </div>
+        </div>
+      
+      <script src="<%= baseURL %>/javascripts/h5.js"></script>
+
+</nav>
+</div>
+<!--Cuerpo-->
+<main>
+  <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+      <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a><b> ·</b> <a href="<%= baseURL %>/autenticacion" title="Autenticación de obras de arte"> Autenticación </a> </div>
+
+  <div>
+    <div class="cuerpo">
+        <p>
+            Las pinturas, los dibujos, las esculturas y otras obras de arte pueden autentificarse de muchas maneras diferentes. Existen unos 20 métodos para demostrar que una obra de arte es auténtica.
+
+Por supuesto, para cada obra de arte y las circunstancias que la rodean, sólo algunas vías de autenticación son relevantes.
+
+La primera tarea que realizamos -de forma gratuita- es determinar CÓMO se puede autentificar su obra de arte.
+
+Esto determinará si necesitamos examinarla físicamente, si se necesitarán pruebas de materiales, qué tipo de fotos podemos necesitar, si se necesitará una investigación, y dónde deben realizarse estas diferentes cosas. 
+
+Nos gusta gestionar las autenticaciones con la mayor eficacia posible.  Algunas se realizan en pocos días, la mayoría se completan en dos o tres semanas, otras tardan más y las más difíciles pueden llevar varios meses.
+
+Respondemos a las emergencias. Por ejemplo, si necesita una respuesta rápida porque tiene una oportunidad de compra o porque tiene un plazo para presentar un reembolso, le ayudaremos inmediatamente. 
+
+
+        </p>
+        <div class="leermas">
+            <div><img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquieda"></div>
+            <ul>
+                <li> <a href="<%= baseURL %>/autenticacion/examinacion" title="Examinación de obras de arte">Examinación</a></li>
+                <li> <a href="<%= baseURL %>/autenticacion/casos-dificiles" title="Origen desconocido o casos difíciles">Casos difíciles</a></li>
+                <li><a href="<%= baseURL %>/autenticacion/revision-del-rechazo" title="Revisamos los casos rechazados">Revisión del rechazo</a></li>
+                <li><a href="<%= baseURL %>/autenticacion/investigacion" title="Investigamos su obra de arte">Investigación</a>
+                    <ul>
+                      <li><a href="<%= baseURL %>/autenticacion/documental" title="Investigación documental de arte">Investigación documental</a></li>
+                      <li><a href="<%= baseURL %>/autenticacion/biografica" title="Investigación biográfica">Investigación biográfica</a></li>
+                      <li><a href="<%= baseURL %>/autenticacion/robos" title="Obras de arte robadas">Robos</a></li>
+                      <li><a href="<%= baseURL %>/autenticacion/origen" title="Origen de obra de arte">Origen</a></li>
+                    </ul>
+                </li>
+                <li><a href="<%= baseURL %>/autenticacion/atribucion" title="Atribución de obra de arte">Atribución</a></li>
+                <li><a href="<%= baseURL %>/autenticacion/certificacion-coa" title="Proveemos certificados (COA)">Certificación (COA)</a></li>
+            </ul>
+        </div>
+ </div>
+ </div> 
+
+</main>
+
+
+<!-- FOOTER -->
+<%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
+

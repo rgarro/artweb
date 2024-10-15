@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - La biografía del artista sirve para autenticar y certificar la pintura.">
+    <meta name="keywords" content="autenticacion de obras de arte, investigacion biografica, autenticar, obra de arte de artista famoso, artista reconocido, obra de arte original, evaluacion de obras de arte, investigacion sobre obras de arte de artista famoso, validar autenticidad de obra de arte, certificacion coa, certificacion de obras de arte originales">   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - La investigación biográfica proporciona indicios para resolver la autenticación. </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+        <a href="<%= baseURL %>/autenticacion" title="Autenticación de arte"> Autenticación </a><b> ·</b> <a href="<%= baseURL %>/autenticacion/investigacion" title="Investigación de obras de arte"> Investigación </a> <b> ·</b> <a href="<%= baseURL %>/autenticacion/biografica" title="Investigación biográfica de arte">Investigación biográfica </a> </div>
+
+    <div>
+        <h1>Investigación biográfica</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+        El alcance de la investigación biográfica en las autenticaciones de obras de arte puede ser amplio. Cuando está en juego la autenticidad de su cuadro, también profundizamos en las fuentes de archivo y en cualquier otra fuente de información que necesitemos. 
+
+La investigación biográfica exige un firme conocimiento del entorno histórico, del entorno del individuo. A menudo implica el rastreo de información detallada sobre la familia y los amigos de un artista para dar cuerpo a su entorno. Por supuesto, un trabajo minucioso implica a veces investigar la vida de los comerciantes de arte, coleccionistas, conservadores de museos y otras personas con las que el artista tuvo una interacción significativa. 
+
+Partimos de fuentes publicadas y tenemos acceso a las mejores bibliotecas de investigación sobre arte del mundo. Cotejamos todas las afirmaciones de las fuentes publicadas con las pruebas primarias: diarios, libros de cuentas y cartas. A menudo consultamos fuentes escritas no publicadas, como disertaciones o tesis. 
+
+Con quince doctores en historia del arte en nuestro equipo y treinta y cinco catálogos razonados en nuestro haber, sabemos cómo investigar eficazmente su cuadro.
+
+
+        
+
+       
+    </p>
+
+    </div>
+  </div>
+</div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>

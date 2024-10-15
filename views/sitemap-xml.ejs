@@ -1,0 +1,348 @@
+<% 
+	var d0= new Date(); 
+	var d=d0.toISOString().slice(0,8) + String(Math.floor(d0.getDate()/5)*5).padStart('0',2); 
+%>
+
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+	<% artists.forEach(element => {%>
+  <url>
+		<loc>https://www.expertosenarte.org/artistas/<%= element.slug %></loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+	<% }) %>
+
+  <url>
+    <loc>https://www.expertosenarte.org/</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/img/arte/perro-aullando-a-la-luna-cc.webp</image:loc>
+        <image:title>Cuadro de Rufino</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/img/arte/antonio-segui-cc.webp</image:loc>
+        <image:title>Pintura de antonio segui</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/img/arte/joaquin-torres-garcia-cc.webp</image:loc>
+        <image:title>Expedición de certificados</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/img/arte/xul-solar-cc.webp</image:loc>
+        <image:title>Arte ciencia</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/img/arte/jose-gurvich-cc.webp</image:loc>
+        <image:title>Valoraciónd de obras de arte</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender/venta-online</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/datacion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/biografica</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/sobre-la-termoluminiscencia</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/tablas</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/investigacion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/preguntas-frecuentes</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/origen</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/robos</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/sellos-y-etiquetas</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/documental</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/rayos-x</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/tasacion-del-valor</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/estudios-forenses</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender/ayuda</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender/subastacion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/firma</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/sobre-nosotros</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/fotografia-especial</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/especies-de-madera</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/analisis-del-papel</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/casos-dificiles</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/testimonios</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/sellos</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/sobre-nosotros/direcciones</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/datacion-por-carbono</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/atribucion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/firma-y-caligrafia</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/examinacion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/revision-del-rechazo</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/tachuelas</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/sobre-la-datacion</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/certificacion-coa</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/sobre-nosotros/nuestros-clientes</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/paneles</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/linguistica-forense</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender/contrato-privado</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/montaje-de-bastidores</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/payment</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/assets/expeditedssl.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://www.expertosenarte.org/assets/credit-card.svg</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender/consejos</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/autenticacion/analisis</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/analisis-de-pigmentos</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/datacion-por-metales</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/vender/venta-de-corretaje</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.expertosenarte.org/cientifico-y-forense/pruebas-cientificas</loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+	<% for(i= 'a'.charCodeAt(0); i<= 'z'.charCodeAt(0); i++) { %>
+   <url>
+	  <loc>https://www.expertosenarte.org/artistas/filter/?q=<%= String.fromCharCode(i) %></loc>
+    <lastmod><%= d %></lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+	<% } %>
+</urlset>

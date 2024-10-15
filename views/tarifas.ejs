@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Expertos en arte - Esta es la página segura para pago con tarjeta de crédito.">
+  <meta name="keywords"
+    content="investigacion sobre obra de arte original, expertos en arte, estudios forenses sobre obra de arte, especialistas en obras de arte de artistas famosos, tasacion de obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigadores de arte">
+  <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+  <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+  <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+  <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+  <link rel="stylesheet" href="<%= baseURL %>/css/checkout.css">
+  <script src="https://js.stripe.com/v3/"></script>
+  <title>Expertos en arte - Puede pagar desde aquí con su tarjeta de crédito.</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+
+<body>
+
+  <div class="sobre-nosotros">
+
+    <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+      </div>
+    </div>
+
+    <nav>
+
+      <!-- The overlay -->
+      <%- include('./partials/nav-bar.ejs') %>
+
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div class="header-seccion">
+
+        <div class="contenedor-hambu">
+
+          <div class="hamburguesa" onclick="openNav()">
+            <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+          </div>
+
+          <div class="servicios-titulo">
+            <header class="subseccion-header">
+              <h1>Tarifas</h1>
+              <p></p>
+            </header>
+          </div>
+        </div>
+      </div>
+
+      <script src="<%= baseURL %>/javascripts/h5.js"></script>
+
+    </nav>
+  </div>
+  <!--Cuerpo-->
+  <main>
+    <div class="container-mw-subseccion">
+      <div class="subseccion-menu">
+        <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a><b> ·</b> <a href="<%= baseURL %>/payment" title="Tenemos los mejores precios"> Tarifas </a>
+      </div>
+
+
+      <div class="cuerpo">
+        <p>
+          Después de examinar su obra de arte, ya sea en persona o a través de las fotos que nos ha proporcionado, y
+          después de revisar toda la información que ha compartido con nosotros, le sugeriremos cómo proceder para su
+          autenticación y le daremos un presupuesto en firme para hacerlo.
+
+          Si este presupuesto es de su agrado, le pedimos que nos envíe el pago al momento.
+
+          Si desea recibir una factura proforma o un contrato de servicios, por favor, háganoslo saber y se lo
+          enviaremos por correo electrónico.
+
+          Para el pago con tarjeta de crédito, por favor utilice el formulario protegido de abajo.
+
+        </p>
+      </div>
+<!--  <div id="panel">
+       
+        <div id="payment-form">
+          <h2>Formulario de pago seguro</h2>
+        	<div id="payment-form-in" class="hidden">
+            <i class="fa-brands fa-expeditedssl"></i>
+           <span>Por favor, ingrese el monto a pagar. <br> </span>
+           <input type="number" id="amount" name="amount">
+           <button id="amount_prepare">Preparar pago</button> 
+           <button id="amount_edit" class="hidden">Modificar Monto</button> 
+
+					<div id="datos_pago" class="hidden">
+									<div id="payment-element">
+										<!--Stripe.js injects the Payment Element--
+									</div>
+									<button id="enviar_pago">
+										<span id="button-text">Pagar</span>
+									</button>
+					</div>
+					</div>
+
+          		<div class="spinner hidden" id="spinner"></div>
+        <div id="payment-message" class="hidden"></div>
+      </div>
+        </div>-->
+
+		<form id="paymentFrm" action="">
+      <h2><img src="<%= baseURL %>/assets/expeditedssl.svg" style="width:20px; height:20px; margin:0px 10px 0px 0px" alt="">Formulario de pago seguro</h2>
+				<div class="nombre-apellido">
+        <input type="text" name="name" id="name" placeholder="Nombre"/>
+				<input type="text" name="surname" id="surname" placeholder="Apellido"/>
+      </div>
+        <input type="email" name="email" id="email" placeholder="Email"/>
+			<div class="phone">
+        <input type="number" name="prefijo" id="prefijo" placeholder="Prefijo"/>
+				<input type="number" name="phone" id="phone" placeholder="Teléfono"/>
+			</div>
+        <input type="number" name="amount" id="amount" placeholder="Monto a pagar"/>
+				<h2><img src="<%= baseURL %>/assets/credit-card.svg" style="width:20px; height:20px; margin:0px 10px 0px 0px" alt="">Detalles de su tarjeta de crédito</h2>
+				<div id="card_number" class="pago-in"></div>
+				<div id="card_expiry" class="pago-in"></div>
+				<div id="card_cvc" class="pago-in"></div>
+				<h2>Resultado</h2>
+				<div id="paymentResponse"></div>
+				<div id="payment-message"></div>
+				<button type="submit" id="payNowBtn">                                                                                                  
+					<div id="lds-circle" class="lds-circle hidden">
+						<div></div>
+					</div>                                                                                                               
+					<span id="show-pay-text"">Pagar</span>
+				</button>             
+			</form>
+
+				<div id="success" class="hidden">
+					<div class="gracias">
+						<div class="gracias-text">¡Gracias!</div>
+					<!--	<div id="success_msg" class =""> </div>-->
+						<div class="gracias-text">Su pago se envió exitosamente.</div>
+					</div>
+				</div>
+				
+  </main>
+	<script>StripeAcc="<%= StripeAcc %>"; StripeBrowserKey="<%= StripeBrowserKey %>";</script>
+	<script src="<%= baseURL %>/javascripts/checkout2.js"></script>
+
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+</body>
+
+</html>

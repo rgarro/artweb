@@ -1,0 +1,123 @@
+<!-- Contacto -->
+
+    <div class="background-contacto">
+      <section>
+        <div class="container-mw" id="contacto">
+    
+          <div class="container-c">
+            <div>
+              <h3>Contáctenos</h3>
+              <form action="<%= baseURL %>/contacto" id="formulario" enctype="multipart/form-data" method="POST">
+                <p>Envíenos sus fotografías y le responderemos a la brevedad.<br>
+                  Deben ser de alta resolución.</a>
+                </p>
+    
+                <script src="<%= baseURL %>/javascripts/formularioContacto.js"></script>
+    
+                <div class="caja-form">
+                  <div class="drop">
+                    <div class="dragArea">
+                      <div class="arrastre">
+    
+                        <h4> Para cargar varias imagenes <br> arrastre y suelte las imagenes en la caja o haga
+                          <button class="click">'click aquí'</button>
+                        </h4>
+    
+                        <input type="file" name="imagenes" multiple id="input-file" hidden />
+                        <input type="test" name="uploaded_files" id="uploaded_files" hidden />
+                      </div>
+                    </div>
+                    <div id="preview">
+    
+                    </div>
+                  </div>
+                  <div class="nombre">
+                    <label for="nombre"><b> Nombre y apellido</b> <br></label>
+                    <input type="text" name="name" id="nombre" placeholder="Nombre">
+                  </div>
+                  <div class="email">
+                    <label for="mail"> <b> E-mail </b> <br> </label>
+                    <input type="text" name="email" id="email" placeholder="E-mail">
+                  </div>
+                  <div>
+                    <label for="mensaje"><b> Mensaje </b> </label>
+                    <textarea name="text" id="mensaje" cols="30" rows="10" placeholder="Su mensaje"></textarea>
+                  </div>
+                </div>
+    
+                <div class="boton-for">
+                  <input class="button-form" type="submit" value="ENVIAR">
+                </div>
+              </form>
+    
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  <!-- FOOTER -->
+  <footer>
+   
+    <div class="background">
+        <div class="footer">
+        <div class="logo-footer">Expertos en Arte</div>
+              <div class="contenido">
+                    <div class="col-fo"><a href="<%= baseURL %>/sobre-nosotros">Sobre nosotros</a> <hr>
+                        <ul>
+                            <li><a href="<%= baseURL %>/#contacto" title="Contacto">Contáctenos</a></li>
+                            <li><a href="<%= baseURL %>/artistas/filter/?q=a" title="Artistas que conocemos">Artistas</a></li>
+                            <li><a href="<%= baseURL %>/testimonios" title="Testimonios de nuestros clientes">Testimonios</a></li>
+                            <li><a href="<%= baseURL %>/sobre-nosotros/nuestros-clientes" title="Nuestros clientes">Nuestros clientes</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-fo"> <a href="<%= baseURL %>/#nuestros-servicios" title="Nuestros servicios">Nuestros servicios</a><hr>
+                        <ul>
+                        <li><a href="<%= baseURL %>/autenticacion" title="Autenticación de obras de arte">Autenticación</a></li>
+                        <li><a href="<%= baseURL %>/tasacion-del-valor" title="Peritaje de obras de arte">Tasación del valor</a></li>
+                        <li><a href="<%= baseURL %>/cientifico-y-forense" title="Ciencia y estudiso forenses en arte">Científico y forense</a></li>
+                        <li><a href="<%= baseURL %>/vender" title="Ventas de obras de arte">Ventas</a></li>
+                        <li><a href="<%= baseURL %>/autenticacion/investigacion" title="Investigamos su obra de arte">Investigación</a></li>
+                    </ul>
+                    </div>
+                    <div class="col-fo">
+                        <a href="<%= baseURL %>/sobre-nosotros/direcciones" title="Locaciones donde estamos">Locaciones</a><hr>
+                        <ul>
+                        <li><ul>
+                                <li> Nueva York</li>
+                                <li> Washington DC</li>
+                                <li> Londres</li>
+                                <li> Paris</li>
+                                <li> Milan</li>
+                                <li> Roma</li>
+                                <li> Bruselas</li>
+                                <li> Ciudad de México</li>
+                                <li> Los Ángeles</li>
+                            </ul>
+                            </li>
+                        
+                        <li>info@expertosenarte.org</li>
+
+
+                            
+
+                        </ul>
+                        
+                        <div class="icons">
+                            <a href="mailto:info@expertosenarte.org" title="Envíenos un mail"> <img src="/public/assets/envelope-solid.svg" alt="Correo electrónico"></a>    
+                        <a href="https://www.facebook.com/artexpertsservices" title="Encuentrenos en facebook"><img src="/public/assets/facebook.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/art_appraisal_authentication/" title="Encuentrenos en instagram"><img src="/public/assets/instagram.svg" alt="Instagram"></a>
+                            <a href="https://twitter.com/artexpertsInc1?t=_5LY5MbXx6yG9FNZFLCxpA&s=09" title="Búsquenos en Twitter"><img src="/public/assets/twitter.svg" alt="Twitter"></a>
+                            <a href="https://www.linkedin.com/company/art-experts/" title="Contáctenos en linkedin"><img src="/public/assets/linkedin.svg" alt="Linkedin"></a>
+                            <a href="https://www.youtube.com/channel/UCmC2Vqn3ENkcTP-DTjrWVSw" title="Búsquenos en youtube"><img src="/public/assets/youtube.svg" alt="Youtube"></a>
+
+                      </div>
+
+                    
+
+                       
+                    </div>
+             </div>
+        </div>
+    </div>
+    </footer>

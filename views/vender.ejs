@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte -  Si quiere vender su pintura podemos ofrecerle consejo, asistencia y un servicio de venta de corretaje. Podemos organizar ventas privadas.">
+    <meta name="keywords" content="expertos en arte, expertos en obras de arte, vender obra de arte original a museo, venta de obras de arte originales, arte, vender, venta de arte, especialistas en obras de arte de artistas famosos, artistas reconocidos, obra de arte original, autenticar, investigar">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+   
+    <title>Expertos en arte - Le ayudamos a vender su pintura.</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+  <div class="sobre-nosotros">
+        
+    <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+      </div>
+      </div>
+       
+      <nav>
+          
+      <!-- The overlay -->
+      <%- include('./partials/nav-bar.ejs') %>
+      
+      
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+       <div class="header-seccion">
+      
+        <div class="contenedor-hambu">
+          
+        <div class="hamburguesa" onclick="openNav()">
+          <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+          </div>
+      
+        <div class="servicios-titulo">
+        <header class="subseccion-header"><h1>Vender</h1>
+          <p></p>
+        </header>
+      </div>
+        </div>
+        </div>
+      
+      <script src="<%= baseURL %>/javascripts/h5.js"></script>
+
+</nav>
+</div>
+<!--Cuerpo-->
+<main>
+  <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+      <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a><b> ·</b> <a href="<%= baseURL %>/vender" title="Vendemos su obra de arte"> Vender </a> </div>
+
+  <div>
+
+  <div>
+    <div class="cuerpo">
+        <p>
+            Vender arte es difícil, lleva meses, es mucho trabajo y es costoso.
+
+Si está acostumbrado a negociar acciones con un par de clics desde su teléfono y a un coste de 0 dólares por operación, se va a llevar una sorpresa brutal cuando decida vender los cuadros que le dejó el abuelo en su testamento.
+
+Por eso, si no tiene tiempo ni ganas de meterse en la venta de arte, le ofrecemos hacerlo por usted.
+
+Si quiere hacer parte del trabajo usted mismo, pero no todo, también le ofrecemos ayuda para la venta y asesoramiento para la misma.
+
+Los servicios de venta que le ofrecemos son totalmente flexibles y se adaptarán exactamente a sus necesidades y preferencias.
+
+Hay personas a las que no les importa cómo se vende el arte, ni dónde.
+
+También hay personas que quieren privacidad, no quieren que se anuncie lo que están haciendo, y tienen preferencias y requisitos sobre cómo se hará la venta.
+
+Estamos aquí para hacer las cosas a su manera y las haremos como usted quiera.
+
+Podemos organizar ventas privadas, ventas de tratados privados, ventas discretas o ventas abiertas.
+
+Hablemos de ello, confidencialmente, cuando y donde quiera. 
+
+        </p>
+        <div class="leermas">
+            <div><img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquieda"></div>
+            <ul>
+                <li><a href="<%= baseURL %>/vender/consejos" title="Consejos para la venta de arte">Consejos para la venta</a></li>
+                <li><a href="<%= baseURL %>/vender/ayuda" title="Ayuda para vender arte">Ayuda</a></li>
+                <li><a href="<%= baseURL %>/vender/venta-de-corretaje" title="Venta de corretaje de arte">Venta de corretaje</a></li>
+                <li><a href="<%= baseURL %>/vender/contrato-privado" title="Venta de arte a través de un contrato privado">Venta a través de un contrato privado</a></li>
+                <li><a href="<%= baseURL %>/vender/subastacion" title="Subastación de arte">Subastación</a></li>
+                <li><a href="<%= baseURL %>/vender/venta-online" title="Venta en linea de arte">Venta en línea</a></li>
+            </ul>
+        </div>
+ </div>
+ </div> 
+ 
+</main>
+
+
+<!-- FOOTER -->
+<%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
+

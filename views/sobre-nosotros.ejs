@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Somos historiadores del arte, científicos y técnicos forenses, especializados en métodos, técnicas y tecnologías aplicadas de autenticación del arte.">
+    <meta name="keywords" content="Expertos en Arte quienes somos, Expertos en Arte, investigacion sobre obra de arte original, expertos en arte, estudios forenses sobre obra de arte, especialistas en obras de arte de artistas famosos, tasacion de obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigadores de arte">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">  
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+   
+    <title>Expertos en Arte · Sobre nosotros</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+  <div class="sobre-nosotros">
+        
+    <div>
+<div class="logo-header"><a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica y todo el mundo">Expertos en Arte</a>
+</div>
+</div>
+ 
+<nav>
+    
+<!-- The overlay -->
+<%- include('./partials/nav-bar.ejs') %>
+
+
+
+<!-- Use any element to open/show the overlay navigation menu -->
+ <div class="header-seccion">
+
+  <div class="contenedor-hambu">
+    
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+    </div>
+
+  <div class="servicios-titulo">
+  <header class="subseccion-header"><h1>Sobre nosotros</h1>
+    <p></p>
+  </header>
+</div>
+  </div>
+  </div>
+
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+
+</nav>
+</div>
+<!--Cuerpo-->
+<main>
+  <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+      <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a><b> ·</b> <a href="<%= baseURL %>/sobre-nosotros" title="Quiénes somos"> Sobre nosotros </a></div>
+
+  <div>
+    <div class="cuerpo">
+        <p>
+          Somos historiadores del arte con doctorados y másteres, científicos y técnicos forenses, especializados en métodos, técnicas y tecnologías aplicadas de autenticación del arte. <br>
+
+          Hacemos uso de todo el espectro de herramientas de autenticación. Inteligencia artificial, algoritmos, ciencias forenses, huellas dactilares, ADN, investigación de la procedencia, datación de materiales, exámenes multiespectrales, fotografía de alta resolución, análisis morelliano, tecnologías innovadoras y varios métodos de autenticación propios. <br>
+          
+          Estamos en el comienzo de nuestra tercera década haciendo esto, y por ahora estamos ampliamente considerados en la cima de esta profesión.  Estamos especializados en resolver los casos más difíciles y situaciones extremadamente complicadas. Por ejemplo, los casos de cuadros buenos que han sido rechazados por falta de pruebas o por otros motivos. <br>
+          
+          Cuando las fundaciones, los comités, los institutos, los familiares u otros expertos dicen que no, nosotros somos el último recurso. <br>
+          
+          La razón por la que somos capaces de resolver casos que otros no pudieron, es que tenemos los recursos humanos y las capacidades para realizar autenticaciones utilizando más técnicas, más métodos, más tecnología, y en muchos más lugares, muchos más archivos, que nadie.  Considere que tenemos historiadores del arte en veintitrés países y que hablamos 21 idiomas.   <br>
+          
+          Hemos autentificado más obras de arte de artistas famosos, y nuestros clientes han vendido más de ellas por más millones, que cualquier otro que haga lo que nosotros hacemos. <br>
+          
+          Nuestros clientes son personas normales que simplemente han heredado o comprado o encontrado una obra de arte, familias antiguas, patrimonios, departamentos de fideicomisos de bancos, bufetes de abogados, empresas de préstamos, liquidadores de seguros, cuerpos de seguridad, casas de subastas, galerías de arte, museos, coleccionistas, organizaciones benéficas, colegios, congregaciones religiosas, clubes antiguos, sindicatos, celebridades, políticos, familias reales y empresarios de éxito. <br>
+          
+          Si posee una obra de arte que tiene el potencial de ser muy valiosa y está preparado para autentificarla, somos los expertos en autenticación con la experiencia y los recursos para hacerlo por usted. <br>
+
+        </p>
+        <div class="leermas">
+            <div><img src="<%= baseURL %>/img/web/arrow-right.png" style="width:16px; height: 17,05px" alt="flecha a la izquieda"></div>
+            <ul>
+                <li><a href="<%= baseURL %>/sobre-nosotros/nuestros-clientes" title="Clientes con los que trabajamos">Nuestros clientes</a></li>
+                <li><a href="<%= baseURL %>/sobre-nosotros/direcciones" title="Locaciones en las que estamos">Locaciones</a></li>
+                 </ul>
+        </div>
+ </div>
+ </div> 
+ 
+</main>
+
+
+<!-- FOOTER -->
+<%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
+

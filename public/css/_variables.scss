@@ -1,0 +1,75 @@
+
+//colores
+$color-negro:#2b2c2c;
+$otro-negro:#605E5E;
+$color-blanco:#FFF;
+$color-primario:#6E98AA;
+$color-gris: #ccc;
+//fonts
+$titulo-serif: 'Clearface', sans-serif;
+$subtitulo: 'Poppins', sans-serif;
+$texto-normal:'Arial', sans-serif;
+
+@font-face {
+    font-family: 'Clearface';
+    src: url('/fonts/ITC-Clearface-Std-Heavy.otf');
+		font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/Poppins-Regular.ttf');
+		font-display: swap;
+}
+
+//tamaño de fonts
+$size-h1: 64px;
+$size-h2: 51px;
+$size-numeros: 72px;
+$size-h3: 38px;
+$size-h4: 28px;
+$size-textonormal: 16px;
+$p-header: 38px;
+
+//tamaños
+$max-width: 1050px;
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//ESTILOS GENERALES
+h2{
+    font-family: $titulo-serif;
+    font-size: $size-h2;
+    margin-bottom: 35px;
+
+}
+
+h3{
+    font-family: $titulo-serif;
+    font-size: $size-h3;
+    }
+
+h4{
+    font-family: $titulo-serif;
+    font-size: $size-h4;
+}
+
+p{
+    font-family: $texto-normal;
+
+}
+
+//LINKS
+a{
+text-decoration: none;
+}
+
+//Header

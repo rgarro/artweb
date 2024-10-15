@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="description" content="Expertos en arte -    Somos expertos en autenticar, certificar y  emitir Certificados de Autenticidad (COA) de las pinturas de <%= artist.name %>.">
+    <meta name="keywords" content="expertos en arte, expertos en obras de arte, investigacion sobre obra de arte original, certificacion de obras de arte, tasacion de obras de arte, especialistas en obras de arte de artistas famosos, artistas reconocidos, obra de arte original, tecnicas de investigacion de obras de arte, autenticar obras de arte, investigar edad de obra de arte, arte latinoamericano, arte español">
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - Somos expetos especialistas en la autenticación de pinturas de <%= artist.name %></title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+ 
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+      <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamerica y todo el mundo"> Inicio </a><b> ·</b> <a href="<%= baseURL %>/artistas/filter/?q=a"> Índice de artistas</a><b> ·</b> <a href="<%= baseURL %><%= artist.slug %>" title="<%= artist.name %>"><%= artist.name %></a>
+      </div>
+
+        <div>
+          <h1><%= artist.name %></h1>
+          <div class="decoration"></div>
+          <div class="date"><i><%= artist.dates %></i></div>
+      </div>
+			<div class="texto-artista">    
+  <p>Obtenga un <a href="<%= baseURL %>/autenticacion/certificacion-coa">Certificado de Autenticidad (COA)</a> para su pintura hecha
+por <%= artist.knownas %>.</p>
+<p>Para vender, asegurar o donar todas sus obras de <%= artist.knownas %>,
+necesita un <a href="<%= baseURL %>/autenticacion/certificacion-coa">Certificado de Autenticidad (COA)</a>.</p>
+<p>Es muy fácil obtener un <a href="<%= baseURL %>/autenticacion/certificacion-coa">Certificado de Autenticidad (COA)</a> para las
+obras de <%= artist.knownas %>. Solo envíenos algunas fotos y las dimensiones y
+cuéntenos lo que sabe sobre el origen o la historia de su pintura de
+<%= artist.knownas %>.</p>
+<p>Si quiere <a href="<%= baseURL %>/vender">vender su cuadro</a> de <%= artist.knownas %> utilize nuestros
+	<a href="<%= baseURL %>/vender>servicios de venta</a>. Ofrecemos ayuda y asesoramiento en ventas, ventas
+mediante tratados privados e intermediación completa para las obras de
+<%= artist.knownas %>.</p>
+		<p>Llevamos autenticando a <%= artist.knownas %> y emitiendo <a href="<%= baseURL %>/autenticacion/certificacion-coa">certificados de
+		autenticidad</a> desde 2002. Somos expertos reconocidos en obras de <%= artist.knownas %>
+ y tasadores certificados de obras de <%= artist.knownas %>. Emitimos COA y
+	<a href="<%= baseURL %>/tasacion-del-valor">tasaciones</a> para todas las obras de arte realizadas por <%= artist.knownas %></p>
+				<p>Nuestras <a href="<%= baseURL %>/autenticacion">autenticaciones de pinturas</a> hechas por <%= artist.knownas %> son
+aceptadas y respetadas en todo el mundo.</p>
+				<p>Cada COA está respaldado por una <a href="<%= baseURL %>/cientifico-y-forense">investigación exhaustiva</a> y análisis
+	de <a href="<%= baseURL %>/autenticacion">informes de autenticación.</a></p>
+<p>Los certificados de autenticidad de las obras de <%= artist.knownas %> que
+	emitimos se basan en <a href="<%= baseURL %>/cientifico-y-forense">investigaciones de arte</a>, <a href="<%= baseURL %>/cientifico-y-forense">investigaciones de
+			autenticación</a>, <a href="<%= baseURL %>/cientifico-y-forense">trabajos analíticos y estudios forenses</a> sólidos,
+confiables y completamente referenciados.</p>
+				<p>Estamos a su disposición en <a href="<%= baseURL %>/sobre-nosotros/direcciones">cualquier parte del mundo</a> para examinar
+su pintura hecha por <%= artist.knownas %>.</p>
+				<p>Por lo general, recibirá sus <a href="<%= baseURL %>/autenticacion/certificacion-coa">certificados de autenticidad</a> y el
+					informe de autenticación en un plazo de dos semanas. Algunos <a href="<%= baseURL %>autenticacion/casos-dificiles">casos
+						complicados</a> de obras de <%= artist.knownas %> difíciles de investigar pueden
+tomar más tiempo.</p>
+				<p>Entre <a href="<%= baseURL %>/sobre-nosotros/nuestros-clientes">nuestros clientes</a> se encuentran coleccionistas de obras de
+<%= artist.knownas %>, inversionistas, autoridades fiscales, ajustadores de
+seguros, tasadores, evaluadores, subastadores, galerías de arte,
+agencias gubernamentales y muchas firmas de abogados.</p>      
+
+			</div>
+			<div class="texto-artista">
+			<%-  artist.bio.replace(/<br[^>]*>[\s\r\n]*<br[^>]*>/gi,'</p><p>')  %>
+			</div>
+
+			<div class="texto-artista">
+				<p>¿Cree poseer una obra de <%= artist.knownas %>? <a href="<%= baseURL %>/#contacto">Póngase en contacto</a> con nosotros para obtener ayuda amable, cortés y extremadamente informativa. Somos los <a href="<%= baseURL %>/">expertos en <%= artist.knownas %></a>.</p>
+			</div>
+
+    </div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+</body></html>
+

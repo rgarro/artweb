@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Revisamos todos los casos rechazados y difíciles y los ayudamos a autenticar y vender.">
+    <meta name="keywords" content="revision del rechazo, expertos en arte, autenticacion de obras de arte, autenticar, obra de arte de artista famoso, artista reconocido, obra de arte original, evaluacion de obras de arte, investigacion sobre obras de arte de artista famoso, validar autenticidad de obra de arte, certificacion coa, certificacion de obras de arte originales"> 
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en Arte · Autenticación · Revisión del rechazo </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="<%= baseURL %>/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+    <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Inicio</a> <b>·</b> <a href="<%= baseURL %>/autenticacion" title="Autenticación de obras de arte"> Autenticación </a><b> ·</b> <a href="<%= baseURL %>/autenticacion/revision-del-rechazo" title="Revisamos los casos rechazados"> Revisión del rechazo </a> </div>
+
+    <div>
+        <h1>Revisión del rechazo</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+        Las pinturas, dibujos, esculturas y otras obras de arte están siendo rechazadas en un número récord, sin explicación y con frecuencia por personas que no están cualificadas ni para autentificar ni para rechazar.  <br>
+
+        Naturalmente, esto es extremadamente frustrante para los propietarios de estas obras de arte y les causa una enorme pérdida económica. <br>
+        
+        Innumerables familias poseen auténticas obras de arte que han pasado por varias generaciones, que no han sido expuestas nunca o durante años, que no han pasado por galerías de arte o subastas desde hace más de medio siglo -o un siglo- y que, por tanto, son esencialmente desconocidas en la actualidad. <br>
+        
+        Las guerras y otros acontecimientos -sobre todo a partir de 1860- han hecho que masas de personas se desplacen, huyan, emigren, escapen y en el proceso se han perdido y olvidado papeles, documentos, información, historia, nombres y fechas. <br>
+        
+        A menudo se rechazan obras de arte sin que se haga ningún esfuerzo por investigar si son auténticas. <br>
+        
+        Estas obras rechazadas no han sido analizadas, ni investigadas, ni probadas.  Estos rechazos son frívolos y a veces deshonestos.  <br>
+        
+        Aquí nos proponemos examinar las obras rechazadas con tanto cuidado y esfuerzo como cualquier otra obra de arte. <br>
+        
+        Le animamos a que envíe para su revisión cualquier obra de arte que haya sido rechazada y que tenga motivos para creer que probablemente sea auténtica.  <br>
+        
+    </p>
+
+    </div>
+  </div>
+</div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+
+</body>
+</html>

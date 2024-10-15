@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Expertos en arte - Tenemos los medios y los expertos para resolver los proyectos más complejos de certificación y autenticación.">
+    <meta name="keywords" content="casos dificiles, autenticacion de obras de arte, investigacion biografica, autenticar, obra de arte de artista famoso, artista reconocido, obra de arte original, evaluacion de obras de arte, investigacion sobre obras de arte de artista famoso, validar autenticidad de obra de arte, certificacion coa, certificacion de obras de arte originales"> 
+   
+ <link rel="stylesheet" href="<%= baseURL %>/css/style.css">
+    <link rel="stylesheet" href="<%= baseURL %>/css/artistas.css">
+    <link rel="icon" type="image/x-icon" href="<%= baseURL %>/assets/favicon.ico">
+    <link rel="stylesheet" href="<%= baseURL %>/css/h5.css">
+    <title>Expertos en arte - Nos especializamos en casos dífíciles de autenticación. </title>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TRT36BXHRM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){window.dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TRT36BXHRM');
+</script>
+</head>
+<body>
+
+    <div class="sobre-nosotros">
+        
+        <div>
+ <div class="logo"><a href="<%= baseURL %>/" title="Expertos de Arte en España, Latinoamérica, y todo el mundo">Expertos en Arte</a></div>
+    </div>
+</div>
+
+<nav>
+  <!-- The overlay -->
+  <%- include('./partials/nav-bar.ejs') %>
+
+
+
+<div class="subseccion-header-1">
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="contenedor-hambu"> 
+  <div class="hamburguesa" onclick="openNav()">
+    <img src="/public/assets/bars-solid.svg" alt="Barra de navegación" style="width:40px; height:40px">
+  </div>
+</div>
+<script src="/javascripts/h5.js"></script>
+</div>
+</nav>
+
+<!--fin de header-->
+
+    <div class="container-mw-subseccion">
+    <div class="subseccion-menu">
+    <a href="<%= baseURL %>/" title="Expertos en Arte en España, Latinoamérica, y todo el mundo">Inicio</a> <b>·</b> <a href="<%= baseURL %>/autenticacion" title="Autenticación de obras de arte"> Autenticación </a><b> ·</b> <a href="<%= baseURL %>/autenticacion/investigacion" title="Investigación de arte"> Investigación </a> </div>
+
+    <div>
+        <h1>Casos difíciles</h1>
+        <div class="decoration"></div>
+        
+    </div>
+    <p>
+      Los casos difíciles tienen muchos matices. Lo que oímos con más frecuencia es que los clientes nos dicen que no tienen procedencia, que no saben quién era el propietario del cuadro antes que ellos, o antes que sus padres o abuelos.  A menudo, estos propietarios nos dicen que no creen que podamos autentificar. Nosotros sí podemos. Si no hay una procedencia, obviamos la cuestión de quién ha sido el propietario. Hay otras formas de demostrar que una obra de arte es auténtica.
+
+A veces, cuadros que a primera vista parecen copias son obra del artista que pintó varias veces la misma composición. En este caso, en lugar de copias, se trata de originales gemelos o triples. Como tales, tienen un valor mucho mayor que una copia de estudiante. Separar las copias buenas y antiguas de los originales gemelos puede ser complejo.
+
+Otra situación delicada es la de las pinturas y los grabados y la cuestión de cuál fue el primero. ¿Se hizo el grabado a partir de la pintura? ¿O se creó la pintura utilizando el grabado como modelo?
+
+Una situación poco frecuente pero muy interesante es la de la mejor copia.  Esto ocurre cuando la copia es mejor, más bonita, más talentosa, que el original. Naturalmente, todo el mundo asume siempre que el original debe ser el mejor, pero a veces no es así. 
+
+Para usted, como propietario de un cuadro que necesita ser autentificado, el beneficio de nuestras décadas de experiencia es que ya hemos manejado una cantidad de diversos casos muy difíciles o complejos. Estamos preparados.  Sabemos cómo investigar y dar sentido a los casos más complicados.  
+
+Esto se aplica, en particular, a los cuadros y otras obras de arte que han sido desestimados, rechazados y para los que ahora cuesta más trabajo enderezar el rumbo y demostrar que son auténticos. <br>
+
+<b> Si su obra de arte es un caso difícil, póngase en contacto con nosotros. <br> Hablemos de ello. Veamos qué se puede hacer. No se rinda.  </b>
+
+
+ 
+    </p>
+
+    </div>
+  </div>
+</div>
+  <!-- FOOTER -->
+  <%- include('./partials/footer.ejs') %>
+
+
+
+</body>
+</html>
