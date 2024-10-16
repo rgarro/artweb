@@ -22,7 +22,7 @@ var sitemap = require("./controllers/sitemap")
 
 
 var app = express();
-
+console.log("here");
 app.set('env',process.env.isDevel ? 'development' : 'prod'); 
 
 //cache control
