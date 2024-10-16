@@ -24,8 +24,8 @@ var sitemap = require("./controllers/sitemap")
 var app = express();
 
 app.set('env',process.env.isDevel ? 'development' : 'prod');
-console.log(app);
-console.log("after env");
+//console.log(app);
+//console.log("after env");
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
