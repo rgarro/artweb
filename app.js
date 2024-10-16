@@ -1,3 +1,5 @@
+const http = require('http');
+
 require('dotenv').config()
 var createError = require('http-errors');
 var express = require('express');
@@ -22,7 +24,7 @@ var sitemap = require("./controllers/sitemap")
 
 
 var app = express();
-console.log("here");
+//console.log("here");
 app.set('env',process.env.isDevel ? 'development' : 'prod'); 
 
 //cache control
@@ -84,6 +86,9 @@ app.use((req, res, next) => {
   next(createError(404));
 });
 
+console.log("the env:");
+console.log(app.get('env'));
+
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
@@ -95,4 +100,20 @@ app.use(function (err, req, res, next) {
   res.render('error', { baseURL: ""});
 });
 
+app.listen(3000);
+/*
 module.exports = app;
+//with its own server
+const hostname = '127.0.0.1';
+const port = 53540;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  //res.setHeader('Content-Type', 'text/plain');
+  //res.end('Hello World Again from Node.js\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+*/
