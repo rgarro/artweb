@@ -22,7 +22,7 @@ var sitemap = require("./controllers/sitemap")
 
 
 var app = express();
-
+const host = "127.0.0.1";
 app.set('env',process.env.isDevel ? 'development' : 'prod');
 //console.log(app);
 //console.log("after env");
@@ -36,15 +36,18 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.all(/.*/, function(req, res, next) { //A: redirigir a www
-        var desired_host= process.env.HOST;
-        var desired_proto= process.env.PROTO || 'https';
-  var host = req.header("host");
-  console.log('host ', host)
-        //DBG: console.log('HOST req vs desired',host, desired_host, desired_proto, req.originalUrl);
-  if (process.env.HOST=="" || host==desired_host) { next(); }
-        else { res.redirect(301, desired_proto+'://'+desired_host+req.originalUrl); }
-});
+
+//app.all(/.*/, function(req, res, next) { //A: redirigir a www
+//        var desired_host= process.env.HOST;
+//        var desired_proto= process.env.PROTO || 'https';
+//  var host = req.header("host");
+//  console.log('host ', host)
+//        //DBG: console.log('HOST req vs desired',host, desired_host, desired_proto, req.originalUrl);
+//  if (process.env.HOST=="" || host==desired_host) { next(); }
+//        else { res.redirect(301, desired_proto+'://'+desired_host+req.originalUrl); }
+//});
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
@@ -58,6 +61,7 @@ Sitemap: https://www.expertosenarte.org/sitemap.xml
 `
   );
 });
+
 app.get('/sitemap.xml', sitemap);
 
 app.use('/', indexRouter)

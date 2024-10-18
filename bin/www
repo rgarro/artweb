@@ -7,8 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('artistapp:server');
 var http = require('http');
-//console.log(app);
-console.log("-----aqui-----");
+
 /**
  * Get port from environment and store in Express.
  */
@@ -25,8 +24,7 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-//server.http.addr = 127.0.0.1;
-//server.listen(port, "127.0.0.1");
+
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -84,7 +82,6 @@ function onError(error) {
  */
 
 function onListening() {
-  //console.log(server.address());
   var addr = server.address();
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
