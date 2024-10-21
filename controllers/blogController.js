@@ -5,9 +5,10 @@ module.exports = {
 	get: async (req, res) => {
 
 		const thePosts = await db.posts.findAll();
-        console.log(thePosts);
+        //console.log(thePosts);
 		const viewData = {
             blogs: thePosts,
+            baseURL: ""
 		};
 		res.status(202).render("blog", viewData)
 	},
