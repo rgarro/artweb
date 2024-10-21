@@ -5,11 +5,10 @@ module.exports = {
 	get: async (req, res) => {
 
 		const thePosts = await db.posts.findAll();
-
-		/*const viewData = {
-            title: title,
-            content: content,
-		};*/
+        console.log(thePosts);
+		const viewData = {
+            blogs: thePosts,
+		};
 		res.status(202).render("blog", viewData)
 	},
 
