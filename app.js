@@ -6,19 +6,20 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var artistRouter = require('./routes/artist')
-var contactRouter = require('./routes/contact')
-var authRouter = require('./routes/auth')
-var cientificoRouter = require('./routes/cientifico')
-var preguntasRouter = require('./routes/preguntas')
-var aboutUsRouter = require("./routes/aboutUs")
-var tasacionRouter = require("./routes/tasacionDelValor")
-var tarifasRouter = require("./routes/tarifas")
-var venderRouter = require("./routes/vender")
-var noticiasRouter = require("./routes/noticias")
-var testimoniosRouter = require("./routes/testimonios")
-var paymentRouter = require("./routes/stripeRouter")
-var sitemap = require("./controllers/sitemap")
+var artistRouter = require('./routes/artist');
+var contactRouter = require('./routes/contact');
+var authRouter = require('./routes/auth');
+var cientificoRouter = require('./routes/cientifico');
+var preguntasRouter = require('./routes/preguntas');
+var aboutUsRouter = require("./routes/aboutUs");
+var tasacionRouter = require("./routes/tasacionDelValor");
+var tarifasRouter = require("./routes/tarifas");
+var venderRouter = require("./routes/vender");
+var noticiasRouter = require("./routes/noticias");
+var testimoniosRouter = require("./routes/testimonios");
+var paymentRouter = require("./routes/stripeRouter");
+var sitemap = require("./controllers/sitemap");
+var blogRouter = require("./routes/blog");
 
 
 var app = express();
@@ -64,18 +65,19 @@ Sitemap: https://www.expertosenarte.org/sitemap.xml
 
 app.get('/sitemap.xml', sitemap);
 
-app.use('/', indexRouter)
-app.use('/artistas', artistRouter)
-app.use("/autenticacion", authRouter)
-app.use("/cientifico-y-forense", cientificoRouter)
-app.use("/preguntas-frecuentes", preguntasRouter)
-app.use("/sobre-nosotros", aboutUsRouter)
-app.use("/tasacion-del-valor", tasacionRouter)
-app.use("/vender", venderRouter)
-app.use("/testimonios", testimoniosRouter)
-app.use("/noticias", noticiasRouter)
-app.use("/payment", paymentRouter)
-app.use("/contacto", contactRouter)
+app.use('/', indexRouter);
+app.use('/artistas', artistRouter);
+app.use("/autenticacion", authRouter);
+app.use("/cientifico-y-forense", cientificoRouter);
+app.use("/preguntas-frecuentes", preguntasRouter);
+app.use("/sobre-nosotros", aboutUsRouter);
+app.use("/tasacion-del-valor", tasacionRouter);
+app.use("/vender", venderRouter);
+app.use("/testimonios", testimoniosRouter);
+app.use("/noticias", noticiasRouter);
+app.use("/payment", paymentRouter);
+app.use("/contacto", contactRouter);
+app.use("/blog", blogRouter);
 
 // catch 404 and forward to error handler 
 app.use((req, res, next) => {
