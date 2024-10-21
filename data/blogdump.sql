@@ -18,3 +18,8 @@ ALTER TABLE
     `authors` ADD UNIQUE `authors_username_unique`(`username`);
 ALTER TABLE
     `posts` ADD CONSTRAINT `posts_author_id_foreign` FOREIGN KEY(`author_id`) REFERENCES `authors`(`id`);
+
+INSERT INTO authors (username,password,full_name) VALUES ('admin','admin','admin');   
+
+INSERT INTO posts (author_id,title,content) VALUES (1,'testPost','lorem ipsum lorem ipsum');
+INSERT INTO posts (author_id,title,content) VALUES (1,'second testPost','lorem ipsum lorem ipsum');
