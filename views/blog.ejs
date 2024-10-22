@@ -71,10 +71,14 @@
         <div></div>
         <div class="container-i">
             <div class="artist-mw">
-                <%= 
-                console.log(blogs);
-                %>
-                here
+                <ul>
+                    <% blogs.forEach(blog=> { %>
+                        <li>
+                            <a href="<%= baseURL %>/blog/<%= blog.id %>" title="Blog"> <%= blog.title %> - <%= blog.blogdate.getMonth() + "/"+blog.blogdate.getFullYear() %> </a>
+                        </li>
+                        <% }) %>
+                </ul>
+                
                 <%= (typeof title !="undefined" ? title : "" ) %>
             </div>
         </div>
