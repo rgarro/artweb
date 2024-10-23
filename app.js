@@ -20,7 +20,7 @@ var testimoniosRouter = require("./routes/testimonios");
 var paymentRouter = require("./routes/stripeRouter");
 var sitemap = require("./controllers/sitemap");
 var blogRouter = require("./routes/blog");
-
+var blogpostRouter = require("./routes/blogpost");//blog detail update
 
 var app = express();
 const host = "127.0.0.1";
@@ -78,6 +78,8 @@ app.use("/noticias", noticiasRouter);
 app.use("/payment", paymentRouter);
 app.use("/contacto", contactRouter);
 app.use("/blog", blogRouter);
+
+app.use("/blogpost", blogpostRouter);//blog detail update
 
 // catch 404 and forward to error handler 
 app.use((req, res, next) => {
